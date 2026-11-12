@@ -1398,24 +1398,23 @@ html,body{overflow-x:clip}
   <div class="wrap">
     <div class="sec-head">
       <div><span class="num">03 · The tech stack</span><h2 id="h-platform">A one-page site built to say just enough.</h2></div>
-      <p>The landing page introduces the district, tells the story, and keeps the rest behind a password until launch day. Under the hood it is built to grow into the full destination site.</p>
+      <p>The landing page introduces the district, tells the story, and keeps the rest behind a password until launch day. It is built with Astro and Sanity, hosted on Cloudflare, and every section is a reusable building block for the full site to come.</p>
     </div>
     <!-- Six cards. Eyebrow = the tool or idea; h3 = the benefit; p = plain-language explanation. -->
     <div class="feat">
-      <div class="f"><span class="eyebrow">Next.js</span><h3>Fast on every device</h3><p>A modern framework with responsive layouts and quick loads on phones, tablets and desktops.</p></div>
-      <div class="f"><span class="eyebrow">Sanity CMS</span><h3>Edit without a developer</h3><p>Every headline, stat, image and partner logo lives in a friendly editing studio.</p></div>
-      <div class="f"><span class="eyebrow">Password gate</span><h3>Private until the reveal</h3><p>The whole site sits behind a password so partners can preview while the public waits.</p></div>
-      <div class="f"><span class="eyebrow">SEO foundation</span><h3>Ready to be found</h3><p>Titles, descriptions, structured data and clean markup are in place for the moment the gate drops.</p></div>
+      <div class="f"><span class="eyebrow">Astro</span><h3>Fast on every device</h3><p>Pages are server rendered with almost no JavaScript, so they load quick on phones, tablets and desktops.</p></div>
+      <div class="f"><span class="eyebrow">Sanity CMS</span><h3>Edit without a developer</h3><p>Every section is a page-builder module the team can add, reorder and edit, with live preview that jumps from any text on the page straight to its field.</p></div>
+      <div class="f"><span class="eyebrow">Password gate</span><h3>Private until the reveal</h3><p>Visitors enter a shared password once and stay signed in for two weeks, so partners can preview while the public waits.</p></div>
+      <div class="f"><span class="eyebrow">SEO foundation</span><h3>Ready to be found</h3><p>Titles, descriptions, structured data, sitemap and robots rules are in place and checked on every deploy.</p></div>
       <div class="f"><span class="eyebrow">AEO baseline</span><h3>Legible to AI</h3><p>Structured answers, an llms.txt file and semantic content so AI assistants can read and recommend the district.</p></div>
-      <div class="f"><span class="eyebrow">Accessibility</span><h3>Built for everyone</h3><p>Semantic HTML, keyboard navigation, contrast and screen reader support as standard.</p></div>
+      <div class="f"><span class="eyebrow">Accessibility</span><h3>Built for everyone</h3><p>Semantic HTML, keyboard navigation, contrast, screen reader support, and motion that switches off when a visitor asks for less of it.</p></div>
     </div>
     <div class="hood">
-      <div><b>Built to grow</b><span>The one-pager is structured to expand into the full destination and marketing site in a future phase.</span></div>
-      <div><b>Organized for handoff</b><span>Brand, Figma, print and presentation assets filed and backed up in the shared drive.</span></div>
-      <div><b>Documented for the future</b><span>Reusable components and a modular content structure keep future updates quick.</span></div>
+      <div><b>Built to grow</b><span>Every section is a reusable building block. When the full site is designed, the blocks carry over without being rebuilt.</span></div>
+      <div><b>Publish and it is live</b><span>Publishing in the Studio triggers a rebuild, and changes reach the site in a few minutes.</span></div>
+      <div><b>Documented for the future</b><span>Docs in the repository cover modules, motion, visual editing and deployment, and typed content keeps the site and the Studio in lockstep.</span></div>
     </div>
 
-    <!-- DEV RECAP: pending. Fold the developer recap into the cards and under-the-hood notes above when it arrives. -->
     <!-- BLOCK:cms START -->
     <div class="pair-head"><span class="eyebrow">Content in Sanity</span><h3>One studio for the whole page.</h3></div>
     <div class="studio">
@@ -1423,10 +1422,10 @@ html,body{overflow-x:clip}
       <div class="studio-notes">
         <span class="eyebrow">Inside the studio</span>
         <ul>
-          <li><b>Hero gallery</b>Swap the district, neighborhood and city views any time.</li>
-          <li><b>Story and stats</b>Update development numbers as milestones land.</li>
-          <li><b>Partners</b>Add partner marks as they come aboard.</li>
-          <li><b>Renderings</b>Refresh conceptual renderings as the designs evolve.</li>
+          <li><b>Page-builder modules</b>Add, remove, reorder and repeat sections, each with its own thumbnail in the picker.</li>
+          <li><b>Live preview</b>See unpublished changes on the real site and click any text to jump to its field.</li>
+          <li><b>Background video</b>Upload video in the Studio for the pinned section, with an image fallback.</li>
+          <li><b>Anchors and links</b>Point any link at any section, which powers the smooth-scrolling header nav.</li>
         </ul>
       </div>
     </div>
@@ -1440,7 +1439,7 @@ html,body{overflow-x:clip}
 <section class="ds" aria-labelledby="h-ds">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="num">04 · The design system</span><h2 id="h-ds">One master library powers every brand.</h2></div>
+      <div><span class="num">04 · The design system</span><h2 id="h-ds">One master library powers everything.</h2></div>
       <p>Everything lives in one Master Library in Figma: colors, type, logos, components and layouts. Change a token once and it carries through every deck, document and design.</p>
     </div>
     <ol class="flow" aria-label="How the library flows into every design">
@@ -1450,9 +1449,11 @@ html,body{overflow-x:clip}
       <li><b>Decks &amp; site</b><span>Presentation masters and the landing page pull from the same source</span></li>
     </ol>
     <div class="gallery">
-      <figure class="shot wide"><button type="button" class="zoom" data-zoom="assets/shots/placeholder.svg" data-cap="The Katy Yards Master Library in Figma (screenshot on the way)"><img src="assets/shots/placeholder.svg" width="1600" height="1000" alt="Katy Yards Master Library in Figma" loading="lazy"><span class="zoom-hint">Click to enlarge</span></button><figcaption>The Katy Yards Master Library in Figma (screenshot on the way)</figcaption></figure>
-      <figure class="shot"><button type="button" class="zoom" data-zoom="assets/shots/placeholder.svg" data-cap="The presentation master, Figma edition (screenshot on the way)"><img src="assets/shots/placeholder.svg" width="1600" height="1000" alt="Katy Yards presentation master in Figma" loading="lazy"><span class="zoom-hint">Click to enlarge</span></button><figcaption>The presentation master, Figma edition (screenshot on the way)</figcaption></figure>
-      <figure class="shot"><button type="button" class="zoom" data-zoom="assets/shots/placeholder.svg" data-cap="The PowerPoint master for the operations team (screenshot on the way)"><img src="assets/shots/placeholder.svg" width="1600" height="1000" alt="Katy Yards PowerPoint master template" loading="lazy"><span class="zoom-hint">Click to enlarge</span></button><figcaption>The PowerPoint master for the operations team (screenshot on the way)</figcaption></figure>
+      <figure class="shot wide"><button type="button" class="zoom" data-zoom="assets/shots/ds-identity.webp" data-cap="The identity sheet: seals, wordmarks, lockups and badges in the Master Library"><img src="assets/shots/ds-identity.webp" width="1880" height="1336" alt="Katy Yards identity sheet in Figma with seals, wordmarks, lockups and badges" loading="lazy"><span class="zoom-hint">Click to enlarge</span></button><figcaption>The identity sheet: seals, wordmarks, lockups and badges in the Master Library</figcaption></figure>
+      <figure class="shot"><button type="button" class="zoom" data-zoom="assets/shots/ds-master.webp" data-cap="One page of truth: marks, color ramps, dark mode and type"><img src="assets/shots/ds-master.webp" width="1462" height="1448" alt="Master page of the Katy Yards Figma library with identity, colors and typefaces" loading="lazy"><span class="zoom-hint">Click to enlarge</span></button><figcaption>One page of truth: marks, color ramps, dark mode and type</figcaption></figure>
+      <figure class="shot"><button type="button" class="zoom" data-zoom="assets/shots/ds-variables.webp" data-cap="Brand colors published as Figma variables, ready to use in any file"><img src="assets/shots/ds-variables.webp" width="2000" height="1647" alt="Figma variables panel showing the Katy Yards brand color tokens" loading="lazy"><span class="zoom-hint">Click to enlarge</span></button><figcaption>Brand colors published as Figma variables, ready to use in any file</figcaption></figure>
+      <figure class="shot"><button type="button" class="zoom" data-zoom="assets/shots/ds-decks.webp" data-cap="The presentation master in Figma Slides, with the first team deck already built from it"><img src="assets/shots/ds-decks.webp" width="1566" height="932" alt="Figma Slides folder showing the Katy Yards master template and a new team deck" loading="lazy"><span class="zoom-hint">Click to enlarge</span></button><figcaption>The presentation master in Figma Slides, with the first team deck already built from it</figcaption></figure>
+      <figure class="shot"><button type="button" class="zoom" data-zoom="assets/shots/ds-pptx.webp" data-cap="The same system in PowerPoint, for decks built outside Figma"><img src="assets/shots/ds-pptx.webp" width="1067" height="600" alt="Cover slide of the Katy Yards PowerPoint master template" loading="lazy"><span class="zoom-hint">Click to enlarge</span></button><figcaption>The same system in PowerPoint, for decks built outside Figma</figcaption></figure>
     </div>
   </div>
 </section>
@@ -1498,7 +1499,7 @@ html,body{overflow-x:clip}
       <div class="row"><span class="n">06</span><div><b>Print &amp; promotional collateral</b><p>Business cards, the press kit trifold and stakeholder materials on reusable templates.</p></div><span class="pill done">Delivered</span></div>
       <div class="row"><span class="n">07</span><div><b>Presentation system</b><p>A 33-layout master deck covering titles, stories, data, galleries and closers.</p></div><span class="pill done">Delivered</span></div>
       <div class="row"><span class="n">08</span><div><b>Foundational brand guidelines</b><p>The Katy Yards brand guide, compiled and shipped as a PDF.</p></div><span class="pill done">Delivered</span></div>
-      <div class="row"><span class="n">09</span><div><b>One-page promotional website</b><p>Custom design built on Next.js and Sanity, password protected until the public reveal.</p></div><span class="pill done">Delivered</span></div>
+      <div class="row"><span class="n">09</span><div><b>One-page promotional website</b><p>Custom design built on Astro and Sanity, hosted on Cloudflare, password protected until the public reveal.</p></div><span class="pill done">Delivered</span></div>
       <div class="row"><span class="n">10</span><div><b>Content population &amp; QA</b><p>Copy written, stats loaded, imagery placed, responsive and browser QA complete.</p></div><span class="pill done">Delivered</span></div>
     </div>
     <!-- Only work that was genuinely outside the proposal. -->
@@ -1516,7 +1517,7 @@ html,body{overflow-x:clip}
 <section class="next" aria-labelledby="h-next">
   <div class="wrap">
     <div class="sec-head">
-      <div><span class="num">07 · What's next</span><h2 id="h-next">The gate drops in 2028. The brand is ready now.</h2></div>
+      <div><span class="num">07 · What's next</span><h2 id="h-next">The gate drops in 2029. The brand is ready now.</h2></div>
       <p>Phase 1 built the foundation. Here is where it goes from here.</p>
     </div>
     <div class="next-list">
