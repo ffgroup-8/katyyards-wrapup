@@ -62,6 +62,11 @@ p{margin:0}
 .stat b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(40px,5vw,60px);line-height:1;font-variant-numeric:tabular-nums;color:var(--paper)}
 .stat span{display:block;margin-top:8px;font-size:14px;color:var(--on-dark-muted)}
 
+/* ---------- hero cta ---------- */
+.hero-cta{display:inline-flex;align-items:center;gap:10px;margin-top:26px;padding:12px 22px;border:1px solid rgba(var(--paper-rgb),.4);border-radius:999px;color:var(--paper);text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;transition:border-color .2s ease,background .2s ease}
+.hero-cta:hover{border-color:var(--accent);background:rgba(var(--paper-rgb),.06)}
+.hero-cta i{font-style:normal;color:var(--accent)}
+
 /* ---------- sections ---------- */
 section{padding:clamp(64px,9vw,112px) 0}
 .sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,5vw,72px);align-items:end;margin-bottom:clamp(36px,5vw,56px)}
@@ -398,6 +403,7 @@ html,body{overflow-x:clip}
       <p class="eyebrow on-dark-label" style="margin-bottom:22px">Katy Yards · Phase One complete · Naming, brand &amp; launch systems</p>
       <h1>PROJECT<br>WRAP <span class="up">UP.</span></h1>
       <p class="lede">A new district needed a name, a face, and a voice. Phase One delivered all three: an identity built from Tulsa railroad history, presentation systems in Figma and PowerPoint, and a launch-ready site waiting behind the curtain.</p>
+      <a class="hero-cta" href="https://ffgroup-8.github.io/ProjectNexus" target="_blank" rel="noopener">View the Phase One tracker <i>&rarr;</i></a>
       <div class="stats">
         <div class="stat"><b>30+</b><span>marks, lockups and badges in the identity system</span></div>
         <div class="stat"><b>6</b><span>brand colors, each with a name worth saying</span></div>
